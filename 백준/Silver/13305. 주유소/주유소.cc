@@ -17,7 +17,6 @@ int main()
 
 	int numberOfCities = firstInput[0];
 
-
 	string string2;
 	getline(cin, string2);
 	stringstream stringStream2(string2);
@@ -34,16 +33,14 @@ int main()
 	while (stringStream3 >> tmpNumber3)
 		prices.push_back(tmpNumber3);
 
-	int result = 0;
+	int least = prices[0];
+	long long result = 0;
 
-	while (!distances.empty()) {
-		int min = *min_element(prices.begin(), prices.end() - 1);
-		int minIndex = min_element(prices.begin(), prices.end() - 1) - prices.begin();
-
-		result += prices[minIndex] * accumulate(distances.begin() + minIndex, distances.end(), 0);
-		distances.erase(distances.begin() + minIndex, distances.end());
-		prices.erase(prices.begin() + minIndex, prices.end());
+	for (int i = 0; i < numberOfCities - 1; i++) {
+		result += (long long) least * distances[i];
+		if (prices[i] > prices[i + 1]) {
+			least = prices[i + 1];
+		}
 	}
-	
 	cout << result;
 }
