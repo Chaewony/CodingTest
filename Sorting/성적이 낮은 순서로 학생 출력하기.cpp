@@ -5,7 +5,7 @@ using namespace std;
 
 bool compare(pair<string, int>a, pair<string, int>b)
 {
-    return a.second > b.second;
+    return a.second < b.second;
 }
 
 int main()
@@ -21,7 +21,7 @@ int main()
         vec.push_back({ str, m });
     }
 
-    sort(vec.rbegin(), vec.rend(), compare);
+    sort(vec.begin(), vec.end(), compare);
 
     for (auto i : vec) {
         cout << i.first << " ";
