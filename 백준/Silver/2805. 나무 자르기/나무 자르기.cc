@@ -24,8 +24,6 @@ int main()
 
     long long result = 0;
 
-    long long max = -1;
-
     while (start <= end) {
         long long total = 0;
         mid = (start + end) / 2;
@@ -37,11 +35,12 @@ int main()
 
         if (total >= m) {
             start = mid + 1;
-            if (mid > max) 
-                max = mid;
+            result = mid;
         }
-        else end = mid - 1;
+        else if (total < m) {
+            end = mid - 1;
+        }
     }
 
-    cout << max;
+    cout << result;
 }
