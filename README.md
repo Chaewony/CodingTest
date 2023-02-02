@@ -8,6 +8,8 @@
 
 📌 `티스토리`: 문제 풀이 과정, 고민한 지점, 사용한 논리(알고리즘) 적합성 등 설명 + 입출력 예시 case 생각해보기 [Link](https://n-o-t-e-p-a-d.tistory.com/category/%EA%B3%B5%EB%B6%80/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4)
 
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tcd1205)](https://solved.ac/tcd1205/)
+
 | Tag| 문제 이름            | 페이지             | Code | Blog |
 | -------- | -----------------------| -----------------------|---------------| -------------|
 | `Greedy` | 거스름돈                |p.87                 | 🔗[Link](https://github.com/Chaewony/CodingTest/blob/main/Greedy/%EA%B1%B0%EC%8A%A4%EB%A6%84%EB%8F%88.cpp) | 🔗[Link](https://n-o-t-e-p-a-d.tistory.com/5)|
