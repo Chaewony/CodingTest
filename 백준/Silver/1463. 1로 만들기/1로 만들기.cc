@@ -11,10 +11,8 @@ int main()
 
     vec.push_back(0); //인덱스 맞추기 위해 v[0] = 0
     vec.push_back(0); //v[1] = 0
-    vec.push_back(1); //v[2] = 1
-    vec.push_back(1); //v[3] = 1
 
-    for (long long i = 4; i < n + 1; i++) {
+    for (long long i = 2; i < n + 1; i++) {
         
         long long min = 1000001;
 
